@@ -33,6 +33,10 @@ FCMPlugin.prototype.onNotificationReceived = function(payload){
 // FIRE READY //
 exec(function(result){ console.log("FCMPlugin Ready OK") }, function(result){ console.log("FCMPlugin Ready ERROR") }, "FCMPlugin",'ready',[]);
 
+// DEFAULT NOTIFICATION CALLBACK //
+FCMPlugin.prototype.send = function(payload){
+	exec(success, error, "FCMPlugin", 'send', []);
+}
 
 
 
