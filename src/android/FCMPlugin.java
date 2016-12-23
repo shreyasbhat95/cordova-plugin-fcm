@@ -106,6 +106,7 @@ public class FCMPlugin extends CordovaPlugin {
 							.addData("my_message", "Hello World")
 							.addData("my_action","SAY_HELLO")
 							.build());
+							callbackContext.success("Sent");
 						}catch(Exception e){
 							callbackContext.error(e.getMessage());
 						}
