@@ -95,7 +95,7 @@ public class FCMPlugin extends CordovaPlugin {
 						}
 					}
 				});
-			}
+			}//sry cr s
 			else if (action.equals("send")) {
 				cordova.getThreadPool().execute(new Runnable() {
 					public void run() {
@@ -112,7 +112,7 @@ public class FCMPlugin extends CordovaPlugin {
 						}
 					}
 				});
-			}
+			}//sry cr
 			else{
 				callbackContext.error("Method not found");
 				return false;
